@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "395559427991",
+    "project_id": "mobile-dashboard-3a62c",
+    "storage_bucket": "mobile-dashboard-3a62c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395559427991:android:732938f54b10a3d0996ed2",
+        "android_client_info": {
+          "package_name": "com.checkpoint.push_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA__fiIiJMf9OeXRK89j7c4RE5nON5Mw40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395559427991:android:02a2a6afe100ab0b996ed2",
+        "android_client_info": {
+          "package_name": "com.checkpoint.storeops_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA__fiIiJMf9OeXRK89j7c4RE5nON5Mw40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
