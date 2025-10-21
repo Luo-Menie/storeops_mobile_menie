@@ -72,8 +72,9 @@ void main() {
     if (settingsItem.evaluate().isEmpty) {
       print('⚠️ Botón de Settings no encontrado. Continuando sin validación.');
     } else {
+      print('Botón de Settings encontrado. Continuando con validación.');
       await tester.tap(settingsItem);
-      await tester.pumpAndSettle(const Duration(seconds: 9));
+      await tester.pumpAndSettle(const Duration(seconds: 2));
       print('⚙️ Settings seleccionado desde el Drawer.');
     }
 
