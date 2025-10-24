@@ -66,18 +66,21 @@ void main() {
     scaffoldState.openDrawer();
     await tester.pumpAndSettle(const Duration(seconds: 1));
     print('📂 Drawer abierto correctamente.');
+         
+    
 
     print('🧭 Buscando y seleccionando Settings...');
     final settingsItem = find.byKey(const Key('drawer_settings'));
     if (settingsItem.evaluate().isEmpty) {
-      print('⚠️ Botón de Settings no encontrado. Continuando sin validación.');
+      print('⚠️ Boton de Settings no encontrado. Continuando sin validacion.');
     } else {
-      print('Botón de Settings encontrado. Continuando con validación.');
+      print('Boton de Settings encontrado. Continuando con validacion.');
       await tester.tap(settingsItem);
       await tester.pumpAndSettle(const Duration(seconds: 2));
       print('⚙️ Settings seleccionado desde el Drawer.');
+      await tester.pumpAndSettle(const Duration(seconds: 4));
     }
-
     print('✅ Test finalizado sin validar pantalla de Settings.');
+
   });
 }
