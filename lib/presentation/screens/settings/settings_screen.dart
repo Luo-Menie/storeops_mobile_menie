@@ -291,7 +291,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   message: AppLocalizations.of(context)
                           ?.loading_customers_info ??
                       'Cargando información...',
-                )
+                ) 
               : SingleChildScrollView(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
@@ -317,9 +317,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         Column(
   crossAxisAlignment: CrossAxisAlignment.start,
   children: [
-    // -------- Dropdown de tiendas --------
     TitleText(
       textShow: AppLocalizations.of(context)!.site,
+      key: Key('site'),
       icon: Icons.store_outlined,
     ),
     isLoadingStores
@@ -363,9 +363,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     const SizedBox(height: 20),
 
-    // -------- Dropdown de grupos --------
     TitleText(
       textShow: AppLocalizations.of(context)!.group,
+      key: Key('group'),
       icon: Icons.door_sliding_outlined,
     ),
     SizedBox(
@@ -412,7 +412,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     const SizedBox(height: 20),
 
-    // -------- Checkboxes de tecnologías --------
     TitleText(
       textShow: AppLocalizations.of(context)!.technologies,
       icon: Icons.wifi_tethering,
@@ -458,7 +457,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     const SizedBox(height: 20),
 
-    // -------- Checkbox de notificaciones --------
     TitleText(
       textShow: AppLocalizations.of(context)!.notifications,
       icon: Icons.notifications_active_outlined,
