@@ -1,0 +1,3 @@
+[submodule "storeops_mobile"]
+	path = storeops_mobile
+	url = https://github.com/Lan-Menie/storeops_mobile.git
